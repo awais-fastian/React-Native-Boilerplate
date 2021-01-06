@@ -40,7 +40,7 @@
     "appcenter": "3.0.2",
     "appcenter-analytics": "3.0.2",
     "appcenter-crashes": "3.0.2",
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "i18next": "^19.4.3",
     "lodash": "^4.17.19",
     "moment": "^2.24.0",
