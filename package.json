@@ -42,7 +42,7 @@
     "appcenter-crashes": "3.0.2",
     "axios": "^0.19.2",
     "i18next": "^19.4.3",
-    "lodash": "^4.17.19",
+    "lodash": "^4.17.21",
     "moment": "^2.24.0",
     "native-base": "^2.13.12",
     "react": "16.13.1",
