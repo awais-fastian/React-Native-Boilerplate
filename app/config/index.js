@@ -1,2 +1,2 @@
-export * from './routes';
-export * from './screens';
+export * from './Routes'
+export * from './Screens'

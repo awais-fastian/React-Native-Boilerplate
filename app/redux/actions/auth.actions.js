@@ -1,4 +1,4 @@
-import { createAction } from './node_modules/redux-actions';
+import { createAction } from 'redux-actions'
 import {
   LOGIN_REQUEST,
   LOGIN_SUCCESS,
@@ -12,7 +12,7 @@ import {
   FACEBOOK_LOGIN_REQUEST,
   FACEBOOK_LOGIN_SUCCESS,
   FACEBOOK_LOGIN_ERROR,
-} from '../types';
+} from 'Redux/Types'
 
 export const authActionsCreator = {
   loginRequest: createAction(LOGIN_REQUEST),
@@ -30,4 +30,4 @@ export const authActionsCreator = {
   facebookLoginRequest: createAction(FACEBOOK_LOGIN_REQUEST),
   facebookLoginSuccess: createAction(FACEBOOK_LOGIN_SUCCESS),
   facebookLoginError: createAction(FACEBOOK_LOGIN_ERROR),
-};
+}

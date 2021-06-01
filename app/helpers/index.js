@@ -1,4 +1,5 @@
-export * from './api';
-export * from './font-helper';
-export * from './bottom-tab-icons';
-export * from './drawer-icons';
+export * from './Api'
+export * from './BottomTabIcons'
+export * from './DrawerIcons'
+export * from './FontHelper'
+export { default as Permissions } from './Permissions'

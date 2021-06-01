@@ -51,7 +51,7 @@ The boilerplate contains:
 - [Code-Push](https://github.com/Microsoft/react-native-code-push) (v6.2.0) This plugin provides client-side integration for the CodePush service, allowing you to easily add a dynamic update experience to your React Native app(s).
 - [react-native-fbsdk](https://github.com/facebook/react-native-fbsdk) (v2.0.0) to facilitate the facebook login
 - [google-signin](https://github.com/react-native-community/google-signin) (v4.0.0) to facilitate the google signin
-- [Theme Support](https://callstack.github.io/react-native-paper/theming.html) with a [`DarkTheme`](App/Utils/DarkTheme.js) and [`LightTheme`](App/Utils/LightTheme.js)
+- [Theme Support](https://callstack.github.io/react-native-paper/theming.html) with a [`DarkTheme`](App/Theme/DarkTheme.js) and [`LightTheme`](App/Theme/LightTheme.js)
 - [react-native-splash-screen](https://github.com/crazycodeboy/react-native-splash-screen) (v3.2.0) setup by default
 - [axios](https://github.com/axios/axios) to make API calls (v0.19.2)
 - [TypeScript](https://www.typescriptlang.org/) configured for React Native
@@ -61,22 +61,22 @@ The boilerplate contains:
 
 ## Directory layout
 
-- [`app/components`](app/components): Presentational components
-- [`app/screens`](app/screens): The application's screens
-- [`app/assets`](app/assets): Assets (image, audio files) used by the application
-- [`app/i18next`](app/i18next): Language setup and localize used by the application
-- [`app/navigation`](app/navigation): React-Navigation setting
-- [`app/redux/store`](app/redux/store): Redux store
-- [`app/redux/sagas`](app/redux/saga): Redux sagas
-- [`app/redux/actions`](app/redux/action): Redux actions
-- [`app/redux/reducers`](app/redux/reducers): Redux reducers
-- [`app/redux/connects`](app/redux/connects): Redux data connectors
-- [`app/redux/types`](app/redux/types): Redux action types
-- [`app/redux/api`](app/redux/api): application services, e.g. API clients
-- [`app/Utils`](app/Utils): Styles helpers for the application
-- [`app/config`](app/config): Routes and Screen configurations
-- [`app/constants`](app/constants): Colors, images and common styles
-- [`app/helpers`](app/helpers): Colors, images and common styles
+- [`app/Components`](app/Components): Presentational components
+- [`app/Containers`](app/Containers): The application's screens
+- [`app/Assets`](app/Assets): Assets (image, audio files) used by the application
+- [`app/I18next`](app/I18next): Language setup and localize used by the application
+- [`app/Navigation`](app/Navigation): React-Navigation setting
+- [`app/Redux/Store`](app/Redux/Store): Redux store
+- [`app/Redux/Sagas`](app/Redux/Sagas): Redux sagas
+- [`app/Redux/Actions`](app/Redux/Actions): Redux actions
+- [`app/Redux/Reducers`](app/Redux/Reducers): Redux reducers
+- [`app/Redux/Connects`](app/Redux/Connects): Redux data connectors
+- [`app/Redux/Types`](app/Redux/Types): Redux action types
+- [`app/Redux/Api`](app/Redux/Api): application services, e.g. API clients
+- [`app/Config`](app/Config): Routes and Screen configurations
+- [`app/Constants`](app/Constants): Colors, images and common styles
+- [`app/Helpers`](app/Helpers): Colors, images and common styles
+- [`app/Theme`](app/Helpers): Light and Dark theme configurations
 
 ## Requirements
 

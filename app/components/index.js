@@ -1,10 +1,10 @@
-export * from './bottom-tab';
-export * from './button';
-export * from './drawer';
-export * from './dropDownHolder';
-export { default as FacebookButton } from './facebook-button';
-export { default as GoogleButton } from './google-button';
-export * from './menu-header';
-export { default as PushNotification } from './push-notifications';
-export * from './text';
-export * from './touchable';
+export * from './BottomTab'
+export * from './Button'
+export * from './CustomDrawer'
+export * from './DropDownHolder'
+export { default as FacebookButton } from './FacebookButton'
+export { default as GoogleButton } from './GoogleButton'
+export * from './MenuHeader'
+export { default as PushNotification } from './PushNotifications'
+export * from './Text'
+export * from './Touchable'

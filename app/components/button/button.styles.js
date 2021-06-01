@@ -1,6 +1,7 @@
-import { StyleSheet } from 'react-native';
-import { theme } from '../../theme';
-const { colors } = theme;
+import { StyleSheet } from 'react-native'
+import { Theme } from 'Theme'
+
+const { colors } = Theme
 
 const styles = StyleSheet.create({
   label: { fontWeight: 'bold', fontSize: 16 },
@@ -12,6 +13,6 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
   },
-});
+})
 
-export default styles;
+export default styles

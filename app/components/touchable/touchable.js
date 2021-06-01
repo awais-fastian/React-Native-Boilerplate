@@ -1,17 +1,18 @@
-import PropTypes from 'prop-types';
-import React from 'react';
-import { TouchableOpacity } from 'react-native';
+import React from 'react'
+import { TouchableOpacity } from 'react-native'
 
-const Touchable = (props) => {
+const Touchable = ({ children, onPress, style, disabled }) => {
   return (
-    <TouchableOpacity underlayColor="transparent" activeOpacity={0.7} {...props}>
-      {props.children}
+    <TouchableOpacity
+      disabled={disabled}
+      onPress={onPress}
+      style={style}
+      underlayColor="transparent"
+      activeOpacity={0.7}
+    >
+      {children}
     </TouchableOpacity>
-  );
-};
+  )
+}
 
-Touchable.propTypes = {
-  onPress: PropTypes.func,
-};
-
-export { Touchable };
+export { Touchable }

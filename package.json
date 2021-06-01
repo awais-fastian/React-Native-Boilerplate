@@ -14,11 +14,10 @@
     "android:production": "ENVFILE=.env.production react-native run-android --variant=release",
     "test": "jest",
     "prettier-fix": "prettier --write app/**/*.js",
-    "prettier-check": "prettier --list-different **/*.js",
-    "lint-fix": "eslint --fix .",
-    "lint-check": "eslint .",
+    "prettier-check": "prettier --check app/**/*.js",
+    "lint-fix": "eslint --fix app",
+    "lint-check": "eslint app",
     "rename": "react-native-rename"
-    
   },
   "dependencies": {
     "@react-native-community/async-storage": "^1.9.0",
@@ -76,18 +75,37 @@
   },
   "devDependencies": {
     "@babel/core": "^7.11.6",
+    "@babel/parser": "^7.12.5",
     "@babel/runtime": "^7.11.2",
     "@react-native-community/eslint-config": "^2.0.0",
-    "babel-jest": "^26.3.0",
+    "@testing-library/jest-native": "^3.4.3",
+    "@testing-library/react-native": "^7.1.0",
+    "babel-eslint": "^10.1.0",
+    "babel-jest": "^26.6.3",
+    "babel-plugin-inline-import": "^3.0.0",
+    "babel-plugin-module-resolver": "^4.0.0",
     "eslint": "^7.9.0",
+    "eslint-config-airbnb": "^18.2.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-react": "^7.21.5",
     "jest": "^26.4.2",
+    "jest-sonar-reporter": "^2.0.0",
     "metro-react-native-babel-preset": "^0.63.0",
     "prettier": "^2.0.5",
     "react-native-rename": "^2.4.1",
+    "react-native-svg-transformer": "^0.14.3",
+    "react-native-testing-library": "^6.0.0",
     "react-test-renderer": "16.13.1",
+    "redux-mock-store": "^1.5.4",
     "typescript": "^3.9.3"
   },
   "jest": {
-    "preset": "react-native"
+    "preset": "react-native",
+    "transformIgnorePatterns": ["node_modules/(?!${esModules})"],
+    "setupFiles": [
+      "./jest.setup.js"
+    ],
+    "testResultsProcessor": "jest-sonar-reporter"
   }
 }

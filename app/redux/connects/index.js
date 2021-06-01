@@ -1,1 +1,1 @@
-export * from './auth.connect';
+export * from './Auth.Connect'

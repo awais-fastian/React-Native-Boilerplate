@@ -1,9 +1,8 @@
-import { Appearance } from 'react-native';
+import { Appearance } from 'react-native'
+import DarkTheme from './DarkTheme'
+import LightTheme from './LightTheme'
 
-import LightTheme from './light-theme';
-import DarkTheme from './dark-theme';
+const colorScheme = Appearance.getColorScheme()
+const Theme = colorScheme === 'dark' ? DarkTheme : LightTheme
 
-const colorScheme = Appearance.getColorScheme();
-const theme = colorScheme === 'dark' ? DarkTheme : LightTheme;
-
-export { theme };
+export { Theme }

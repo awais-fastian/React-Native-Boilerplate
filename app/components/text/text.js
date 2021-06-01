@@ -1,21 +1,20 @@
-import _ from 'lodash';
-import React from 'react';
-import { StyleSheet, Text as RCText } from 'react-native';
-import { FontHelper } from '../../helpers';
+import { FontHelper } from 'Helpers'
+import _ from 'lodash'
+import React from 'react'
+import { StyleSheet, Text as RCText } from 'react-native'
 
-const Text = (props) => {
-  var { style } = props;
-  if (style instanceof Array) {
-    style = _.map(style, (styleObject) => styleObject && FontHelper(StyleSheet.flatten(styleObject)));
+const Text = ({ style, children }) => {
+  let textStyle = { ...style }
+  if (textStyle instanceof Array) {
+    textStyle = _.map(
+      style,
+      (styleObject) => styleObject && FontHelper(StyleSheet.flatten(styleObject)),
+    )
   } else {
-    style = FontHelper(StyleSheet.flatten(style || {}));
+    textStyle = FontHelper(StyleSheet.flatten(style || {}))
   }
 
-  return (
-    <RCText {...props} style={style}>
-      {props.children}
-    </RCText>
-  );
-};
+  return <RCText style={style}>{children}</RCText>
+}
 
-export { Text };
+export { Text }

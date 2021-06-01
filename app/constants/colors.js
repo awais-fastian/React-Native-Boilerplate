@@ -5,6 +5,6 @@ const COLORS = {
   WHITE: '#ffffff',
   BLACK: '#000000',
   GRAY: '#A6A6A6',
-};
+}
 
-export { COLORS };
+export { COLORS }

@@ -1,12 +1,12 @@
-import { SERVER_URL, END_POINTS } from '../../config';
-import { API } from '../../helpers';
+import { END_POINTS, SERVER_URL } from 'Config'
+import { API } from 'Helpers'
 
 export function login(params) {
   return API.fetch({
     method: 'POST',
     url: `${SERVER_URL}${END_POINTS.login}`,
     data: params,
-  }).then((response) => response.data);
+  }).then((response) => response.data)
 }
 
 export function signUp(params) {
@@ -14,5 +14,5 @@ export function signUp(params) {
     method: 'POST',
     url: `${SERVER_URL}${END_POINTS.sign_up}`,
     data: params,
-  }).then((response) => response.data);
+  }).then((response) => response.data)
 }

@@ -1,1 +1,1 @@
-export * from './auth.types';
+export * from './Auth.Types';

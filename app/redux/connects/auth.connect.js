@@ -1,14 +1,14 @@
-import { connect } from 'react-redux';
-import { authActionsCreator } from '../actions';
+import { authActionsCreator } from 'Actions'
+import { connect } from 'react-redux'
 
 function mapStateToProps({ AuthData }) {
   return {
     AuthData,
-  };
+  }
 }
 
-const mapDispatchToProps = authActionsCreator;
+const mapDispatchToProps = authActionsCreator
 
 export function authData(configMapStateToProps = mapStateToProps) {
-  return connect(configMapStateToProps, mapDispatchToProps);
+  return connect(configMapStateToProps, mapDispatchToProps)
 }

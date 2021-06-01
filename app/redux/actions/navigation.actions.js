@@ -1,5 +1,5 @@
-import NavigationService from '../../navigation/navigation-service';
+import NavigationService from 'Navigation/NavigationService'
 
 export function navigateToHome(params) {
-  NavigationService.navigate('App', params);
+  NavigationService.navigate('App', params)
 }

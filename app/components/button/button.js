@@ -1,20 +1,20 @@
-/* eslint-disable react/prop-types */
-import React from 'react';
-import { Button, withTheme } from 'react-native-paper';
-import styles from './button.styles';
+import React from 'react'
+import { Button, withTheme } from 'react-native-paper'
+import styles from './Button.Styles'
 
-function AppButton(props) {
+function AppButton({ title, style, labelStyles, onSubmit, isLoadingVisible }) {
   return (
     <Button
-      labelStyle={[styles.label, { ...props.labelStyles }]}
+      labelStyle={{ ...styles.label, ...labelStyles }}
       mode="contained"
       uppercase={false}
-      onPress={() => props.onSubmit()}
-      loading={props.isLoadingVisible}
-      style={[styles.container, { ...props.style }]}>
-      {props.title}
+      onPress={onSubmit}
+      loading={isLoadingVisible}
+      style={{ ...styles.container, ...style }}
+    >
+      {title}
     </Button>
-  );
+  )
 }
 
-export default withTheme(AppButton);
+export default withTheme(AppButton)

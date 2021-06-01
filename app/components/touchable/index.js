@@ -1,1 +1,1 @@
-export * from './touchable';
+export * from './Touchable'
