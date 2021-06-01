@@ -1,0 +1,11 @@
+{
+    "plugins": [
+      ["module-resolver", {
+        "root": ["./app"],
+        "alias": {
+          "test": "./test",
+          "underscore": "lodash"
+        }
+      }]
+    ]
+  }

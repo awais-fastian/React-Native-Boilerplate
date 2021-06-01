@@ -1,0 +1,10 @@
+{
+    "compilerOptions": {
+        "baseUrl": ".",
+        "paths": {
+            "*":["app/*"],
+            "test":["test/*"],
+            "underscore":["lodash"]
+        }
+    },
+}
